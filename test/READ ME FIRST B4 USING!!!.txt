@@ -1,0 +1,12 @@
+put your question
+in "Q.txt", use spaces on
+each, uh, new number??
+example: if you put "3 * 2" without
+quotation marks you get 6 when you run the code
+             
+		<------------------->
+
++ = Addition
+- = Subtraction
+* = Multiplication
+/ = Division
