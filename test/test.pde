@@ -29,8 +29,10 @@ if (E.equals("+")) {
 
   textSize(35);
   text(X, 100,300);
-
   delay(2000);
+  
+  if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
+  
 } // if opertator is *
 if (E.equals("*")) {
   float X = (Num1 * Num2);
