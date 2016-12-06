@@ -19,11 +19,12 @@ float Num1 = A[0];
 float Num2 = A[2];
 
 
-
+if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
 
 
 //if operator is +
 if (E.equals("+")) {
+  if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
   float X = (Num1 + Num2); //<>//
   fill(255,255,255);
 
@@ -31,10 +32,13 @@ if (E.equals("+")) {
   text(X, 100,300);
   delay(2000);
   
-  if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
+
+
   
 } // if opertator is *
 if (E.equals("*")) {
+  if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
+  
   float X = (Num1 * Num2);
   fill(255,255,255);
 
@@ -45,6 +49,7 @@ if (E.equals("*")) {
 }
 // If opertator is -
 if (E.equals("-")) {
+    if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
   float X = (Num1 - Num2);
   fill(255,255,255);
 
@@ -55,6 +60,7 @@ if (E.equals("-")) {
 }
 //if operator is /
 if (E.equals("/")) {
+    if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
   float X = (Num1 / Num2);
   fill(255,255,255);
 
