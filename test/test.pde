@@ -19,12 +19,15 @@ float Num1 = A[0];
 float Num2 = A[2];
 
 
-if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
 
+int ND = 2;
 
 //if operator is +
 if (E.equals("+")) {
-  if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
+  if (Length > 2) {
+ 
+  
+  } else { println("AWwww");}
   float X = (Num1 + Num2); //<>//
   fill(255,255,255);
 
