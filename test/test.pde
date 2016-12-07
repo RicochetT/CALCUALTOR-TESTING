@@ -43,16 +43,22 @@ if (E.equals("+")) {
 
   
  // if opertator is *
-if (E.equals("*")) {
-  if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
-  
-  float X = (Num1 * Num2);
+if (E.equals("*")){
+float X = (Num1 * Num2); 
+  print(X);
+  if (Length > 2) { // This is if there's another operator of "+"
+    float Num3 = A[4];
+    String E2 = Eq[3];
+    
+    if (E2.equals("+")) { X = (Num1 * Num2 + Num3); }
+    else if (E2.equals("*")) { X = (Num1 * Num2 * Num3);}
+    else if (E2.equals("-")) { X = (Num1 * Num2 - Num3);}
+    else if (E2.equals("/")) { X = (Num1 * Num2 / Num3);}
+  }
   fill(255,255,255);
-
   textSize(35);
-  text(X, 100,300);
-
-  delay(2000);
+  text(X, 100,200);
+  delay(1000);
 }
 // If opertator is -
 if (E.equals("-")) {
