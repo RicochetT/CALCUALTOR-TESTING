@@ -8,7 +8,7 @@ String [] q = loadStrings("Q.txt");
 String [] Eq = (split(q[0], ' '));
  float [] A = float(split(q[0], ' '));
 int Length = Eq.length - 1;
-println(Length);
+// println(Length);
 
   
 if (Eq[Length].equals(null)){ print("There is no third operator!"); }
@@ -23,22 +23,28 @@ float Num2 = A[2];
 int ND = 2;
 
 //if operator is +
-if (E.equals("+")) {
-  if (Length > 2) {
- 
-  
-  } else { println("AWwww");}
-  float X = (Num1 + Num2); //<>//
-  fill(255,255,255);
+if (E.equals("+")) { 
+  float X = (Num1 + Num2);  
+  if (Length > 2) { // This is if there's another operator of "+"
+    float Num3 = A[4];
+    String E2 = Eq[3];
+    
+    if (E2.equals("+")) { X = (Num1 + Num2 + Num3);
+ }
+    
+   else { print("AWwww");}
+   fill(255,255,255);
 
   textSize(35);
-  text(X, 100,300);
+  text(X, 100,200);
   delay(2000);
-  
+   
+   //<>//
+    }
+  }
 
-
   
-} // if opertator is *
+ // if opertator is *
 if (E.equals("*")) {
   if (Length > 2) { println("IT WORKS!");} else { println("AWwww");}
   
