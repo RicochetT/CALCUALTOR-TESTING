@@ -24,24 +24,21 @@ int ND = 2;
 
 //if operator is +
 if (E.equals("+")) { 
-  float X = (Num1 + Num2);  
-  if (Length > 2) { // This is if there's another operator of "+"
+  float X = (Num1 + Num2); 
+  print(X);
+  if (Length >= 3) { // This is if there's another operator of "+"
     float Num3 = A[4];
     String E2 = Eq[3];
     
     if (E2.equals("+")) { X = (Num1 + Num2 + Num3);
- }
-    
-   else { print("AWwww");}
-   fill(255,255,255);
 
+    }  //<>//
+  }
+  fill(255,255,255);
   textSize(35);
   text(X, 100,200);
-  delay(2000);
-   
-   //<>//
-    }
-  }
+  delay(1000);
+}
 
   
  // if opertator is *
