@@ -20,13 +20,13 @@ float Num2 = A[2];
 
 
 
-int ND = 2;
+
 
 //if operator is +
 if (E.equals("+")) { 
   float X = (Num1 + Num2); 
   print(X);
-  if (Length >= 3) { // This is if there's another operator of "+"
+  if (Length > 2) { // This is if there's another operator of "+"
     float Num3 = A[4];
     String E2 = Eq[3];
     
