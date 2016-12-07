@@ -6,13 +6,9 @@ void setup() {
 
 String [] q = loadStrings("Q.txt");
 String [] Eq = (split(q[0], ' '));
- float [] A = float(split(q[0], ' '));
+float [] A = float(split(q[0], ' '));
 int Length = Eq.length - 1;
 // println(Length);
-
-  
-if (Eq[Length].equals(null)){ print("There is no third operator!"); }
-else{ print("Detected an extra operator/variable!"); }
 
 String E = Eq[1];
 float Num1 = A[0];
@@ -20,12 +16,10 @@ float Num2 = A[2];
 
 
 
-
-
 //if operator is +
 if (E.equals("+")) { 
   float X = (Num1 + Num2); 
-  if (Length > 2) { // This is if there's another operator of "+"
+  if (Length > 2) { // This is if there's another operator after "+"
     float Num3 = A[4];
     String E2 = Eq[3];
     
@@ -44,9 +38,9 @@ if (E.equals("+")) {
  // if opertator is *
 if (E.equals("*")){
 float X = (Num1 * Num2); 
-  if (Length > 2) { // This is if there's another operator of "+"
-    float Num3 = A[4];
-    String E2 = Eq[3];
+  if (Length > 2) { // This is if there's another operator after "*"
+   float Num3 = A[4];
+   String E2 = Eq[3];
     
     if (E2.equals("+")) { X = (Num1 * Num2 + Num3); }
     else if (E2.equals("*")) { X = (Num1 * Num2 * Num3);}
@@ -61,7 +55,7 @@ float X = (Num1 * Num2);
 // If opertator is -
 if (E.equals("-")){
 float X = (Num1 - Num2); 
-  if (Length > 2) { // This is if there's another operator of "+"
+  if (Length > 2) { // This is if there's another operator after "-"
     float Num3 = A[4];
     String E2 = Eq[3];
     
@@ -78,7 +72,7 @@ float X = (Num1 - Num2);
 //if operator is /
 if (E.equals("/")){
 float X = (Num1 / Num2); 
-  if (Length > 2) { // This is if there's another operator of "+"
+  if (Length > 2) { // This is if there's another operator after "/"
     float Num3 = A[4];
     String E2 = Eq[3];
     
