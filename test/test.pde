@@ -30,9 +30,10 @@ if (E.equals("+")) {
     float Num3 = A[4];
     String E2 = Eq[3];
     
-    if (E2.equals("+")) { X = (Num1 + Num2 + Num3);
-
-    }  //<>//
+    if (E2.equals("+")) { X = (Num1 + Num2 + Num3); }
+    else if (E2.equals("*")) { X = (Num1 + Num2 * Num3);}
+    else if (E2.equals("-")) { X = (Num1 + Num2 - Num3);}
+    else if (E2.equals("/")) { X = (Num1 + Num2 / Num3);} //<>//
   }
   fill(255,255,255);
   textSize(35);
