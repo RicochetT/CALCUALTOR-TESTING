@@ -8,7 +8,7 @@ String [] q = loadStrings("Q.txt");
 String [] Eq = (split(q[0], ' '));
 float [] A = float(split(q[0], ' '));
 int Length = Eq.length - 1;
-// println(Length);
+ println(Length);
 
 String E = Eq[1];
 float Num1 = A[0];
@@ -63,6 +63,18 @@ float X = (Num1 - Num2);
     else if (E2.equals("*")) { X = (Num1 - Num2 * Num3);}
     else if (E2.equals("-")) { X = (Num1 - Num2 - Num3);}
     else if (E2.equals("/")) { X = (Num1 - Num2 / Num3);}
+    
+    if (Length > 4){ // This is if theres a 3rd operator.
+      float Num4 = A[6];
+      String E3 = Eq[5];
+      
+    if (E3.equals("+")) { X = (Num1 - Num2 + Num3 + Num4); }
+    else if (E3.equals("*")) { X = (Num1 - Num2 * Num3 * Num4);}
+    else if (E3.equals("-")) { X = (Num1 - Num2 - Num3 - Num4);}
+    else if (E3.equals("/")) { X = (Num1 - Num2 / Num3 / Num4);}
+    
+  }
+ 
   }
   fill(255,255,255);
   textSize(35);
