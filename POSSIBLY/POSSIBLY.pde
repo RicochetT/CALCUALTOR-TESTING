@@ -66,10 +66,10 @@ float X = (Num1 - Num2);
       String E3 = Eq[5];
       
       // Make a X2 variable and if statment if legnth is greater then 4
-      if (E3.equals("+")) { X = (Num1 - Num2 + Num3 + Num4); }
-      else if (E3.equals("*")) { X = (Num1 - Num2 + Num3 * Num4);}
-      else if (E3.equals("-")) { X = (Num1 - Num2 + Num3 - Num4);}
-      else if (E3.equals("/")) { X = (Num1 - Num2 + Num3 / Num4);} 
+      if (E3.equals("+")) { X2 = (Num1 - Num2 + Num3 + Num4); }
+      else if (E3.equals("*")) { X2 = (Num1 - Num2 + Num3 * Num4);}
+      else if (E3.equals("-")) { X2 = (Num1 - Num2 + Num3 - Num4);}
+      else if (E3.equals("/")) { X2 = (Num1 - Num2 + Num3 / Num4);} 
     //======================================================
     else if (E2.equals("*")) { X = (Num1 - Num2 * Num3);}
     if (Length > 4){
@@ -78,32 +78,32 @@ float X = (Num1 - Num2);
       if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
       if (E3.equals("-")) { X2 = (Num1 - Num2 * Num3 - Num4);}
       if (E3.equals("/")) { X2 = (Num1 - Num2 * Num3 / Num4);}
-        fill(255,255,255);
-        textSize(35);
-        text(X2, 100,400);
-        print(X2);
-    }
+        
+    }//Rember to fix the code
      //======================================================
     else if (E2.equals("-")) { X = (Num1 - Num2 - Num3);}
     if (Length > 4){ // This is if theres a 3rd operator.
-           if (E3.equals("+")) { X = (Num1 - Num2 - Num3 + Num4);}
-      else if (E3.equals("*")) { X = (Num1 - Num2 - Num3 * Num4);}
-      else if (E3.equals("-")) { X = (Num1 - Num2 - Num3 - Num4);}
-      else if (E3.equals("/")) { X = (Num1 - Num2 - Num3 / Num4);} }
+           if (E3.equals("+")) { X2 = (Num1 - Num2 - Num3 + Num4);}
+      else if (E3.equals("*")) { X2 = (Num1 - Num2 - Num3 * Num4);}
+      else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);}
+      else if (E3.equals("/")) { X2 = (Num1 - Num2 - Num3 / Num4);} }
     //==========================================
     else if (E2.equals("/")) { X = (Num1 - Num2 / Num3);}
     if (Length > 4){ // This is if theres a 3rd operator.
-           if (E3.equals("+")) { X = (Num1 - Num2 / Num3 + Num4);}
-      else if (E3.equals("*")) { X = (Num1 - Num2 / Num3 * Num4);}
-      else if (E3.equals("-")) { X = (Num1 - Num2 / Num3 - Num4);}
-      else if (E3.equals("/")) { X = (Num1 - Num2 / Num3 / Num4);} }
+           if (E3.equals("+")) { X2 = (Num1 - Num2 / Num3 + Num4);}
+      else if (E3.equals("*")) { X2 = (Num1 - Num2 / Num3 * Num4);}
+      else if (E3.equals("-")) { X2 = (Num1 - Num2 / Num3 - Num4);}
+      else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} }
      //====================================
     if (Length > 4){ // This is if theres a 3rd operator.
-    if (E3.equals("+")) { X = (Num1 - Num2 + Num3 + Num4); }
-    else if (E3.equals("*")) { X = (Num1 - Num2 * Num3 * Num4);}
-    else if (E3.equals("-")) { X = (Num1 - Num2 - Num3 - Num4);}
-    else if (E3.equals("/")) { X = (Num1 - Num2 / Num3 / Num4);} }
-    
+    if (E3.equals("+")) { X2 = (Num1 - Num2 + Num3 + Num4); }
+    else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
+    else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);}
+    else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} }
+    fill(255,255,255);
+        textSize(35);
+        text(X2, 100,400);
+        print(X2);
   }
   }
   
@@ -124,13 +124,7 @@ float X = (Num1 / Num2);
     else if (E2.equals("-")) { X = (Num1 / Num2 - Num3);}
     else if (E2.equals("/")) { X = (Num1 / Num2 / Num3);}
   }
-  if (Length < 2) {
-  fill(255,255,255);
-  textSize(35);
-  text(X2, 100,200);}
-  else {
-  text(X2, 100,200);
-  delay(1000);}
+ 
 }
 
 }
