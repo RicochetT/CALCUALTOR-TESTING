@@ -68,19 +68,19 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 + Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 + Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 + Num3 / Num4);}
-      println(X2);
+      println(X2,"1");
       }
-      }
+  }
     //======================================================
     else if (E2.equals("*")) { X = (Num1 - Num2 * Num3);
     if (Length > 4){
       // This is if theres a 3rd operator.
       if (E3.equals("+")) { X2 = (Num1 - Num2 * Num3 + Num4);}
-      if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
-      if (E3.equals("-")) { X2 = (Num1 - Num2 * Num3 - Num4);}
-      if (E3.equals("/")) { X2 = (Num1 - Num2 * Num3 / Num4);}
-        println(X2);
-    }
+     else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
+     else if (E3.equals("-")) { X2 = (Num1 - Num2 * Num3 - Num4);}
+     else if (E3.equals("/")) { X2 = (Num1 - Num2 * Num3 / Num4);}
+        println(X2,"2");
+      }
     }//Rember to fix the code
      //======================================================
     else if (E2.equals("-")) { X = (Num1 - Num2 - Num3);
@@ -89,7 +89,7 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 - Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 - Num3 / Num4);} 
-      println(X2);
+      println(X2,"3");
     }
   }
     //==========================================
@@ -99,7 +99,7 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} 
-    println(X2);  
+    println(X2,"4");  
   }
 }
      //====================================
@@ -108,7 +108,7 @@ float X = (Num1 - Num2);
     else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
     else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);}
     else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} 
-  println(X2);  
+  println(X2,"5");  
 }
 }
 }
