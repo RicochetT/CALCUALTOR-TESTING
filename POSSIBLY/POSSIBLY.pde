@@ -107,11 +107,11 @@ float X = (Num1 - Num2);
     if (E3.equals("+")) { X2 = (Num1 - Num2 + Num3 + Num4); 
      println(X2,"5");  }
     else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);
-     println(X2,"5");  }
+     println(X2,"6");  }
     else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);
-     println(X2,"5");  }
+     println(X2,"7");  }
     else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);
-     println(X2,"5");  }
+     println(X2,"8");  }
  
 }
 }
