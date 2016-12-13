@@ -68,7 +68,6 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 + Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 + Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 + Num3 / Num4);}
-      println(X2,"1");
       }
   }
     //======================================================
@@ -79,7 +78,6 @@ float X = (Num1 - Num2);
      else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
      else if (E3.equals("-")) { X2 = (Num1 - Num2 * Num3 - Num4);}
      else if (E3.equals("/")) { X2 = (Num1 - Num2 * Num3 / Num4);}
-        println(X2,"2");
       }
     }//Rember to fix the code
      //======================================================
@@ -89,7 +87,7 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 - Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 - Num3 / Num4);} 
-      println(X2,"3");
+
     }
   }
     //==========================================
@@ -99,29 +97,27 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} 
-    println(X2,"4");  
+
   }
 }
      //====================================
     if (Length > 4){ // This is if theres a 3rd operator.
-    if (E3.equals("+")) { X2 = (Num1 - Num2 + Num3 + Num4); 
-     println(X2,"5");  }
-    else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);
-     println(X2,"6");  }
+    if (E3.equals("+")) { X2 = (Num1 - Num2 + Num3 + Num4);}
+    else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
     else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);
-     println(X2,"7");  }
+     println(X2,"75");  }
     else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);
-     println(X2,"8");  }
+     println(X2,"8d");  }
  
+    }
+  }
 }
-}
-}
+print(X2);
   
   fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
   delay(1000);
-  print(X2);
 
 //if operator is /
 if (E.equals("/")){
