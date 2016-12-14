@@ -99,19 +99,8 @@ float X = (Num1 - Num2);
       else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} 
 
   }
-}
-     //====================================
-    if (Length > 4){ // This is if theres a 3rd operator.
-    if (E3.equals("+")) { X2 = (Num1 - Num2 + Num3 + Num4);}
-    else if (E3.equals("*")) { X2 = (Num1 - Num2 * Num3 * Num4);}
-    else if (E3.equals("-")) { X2 = (Num1 - Num2 - Num3 - Num4);
-     println(X2,"75");  }
-    else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);
-     println(X2,"8d");  }
- 
-    }
-  }
-}
+}println(X2,"#2");
+}}
 print(X2);
   
   fill(255,255,255);
