@@ -61,13 +61,13 @@ float X = (Num1 + Num2);
       else if (E3.equals("*")) { X2 = (Num1 + Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 + Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 + Num2 / Num3 / Num4);} 
-      print(X2);
     }
   }
 } //<>//
   if (Length < 2) {
   fill(255,255,255);
   textSize(35);
+<<<<<<< HEAD
   text(X2, 100,200);
   delay(1000);}
   else {
@@ -75,6 +75,10 @@ float X = (Num1 + Num2);
   textSize(35);
   text(X, 100,200);
   delay(1000);}
+=======
+  text(X, 100,200);
+  delay(1000);
+>>>>>>> parent of 0bff137... added support for 3 operator for division
 }
 
   
@@ -123,7 +127,6 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 * Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 * Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 * Num2 / Num3 / Num4);} 
-      print(X2);
     }
   }
 }
@@ -131,6 +134,7 @@ float X = (Num1 - Num2);
   if (Length < 2) {
   fill(255,255,255);
   textSize(35);
+<<<<<<< HEAD
   text(X2, 100,200);
   delay(1000);}
   else {
@@ -139,6 +143,10 @@ float X = (Num1 - Num2);
   text(X, 100,200);
   delay(1000);}
 
+=======
+  text(X, 100,200);
+  delay(1000);
+>>>>>>> parent of 0bff137... added support for 3 operator for division
 }
 // If opertator is -
 if (E.equals("-")){
@@ -185,7 +193,7 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} 
-print(X2);
+
       }
     }
   }
@@ -194,6 +202,7 @@ print(X2);
   fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
+<<<<<<< HEAD
   delay(1000);}
   else {
   fill(255,255,255);
@@ -202,11 +211,17 @@ print(X2);
   delay(1000);}
 }
 // If opertator is /
+=======
+  delay(1000);
+
+//if operator is /
+>>>>>>> parent of 0bff137... added support for 3 operator for division
 if (E.equals("/")){
 float X = (Num1 / Num2); 
-  if (Length > 2) { // This is if there's another operator after "-"
+  if (Length > 2) { // This is if there's another operator after "/"
     float Num3 = A[4];
     String E2 = Eq[3];
+<<<<<<< HEAD
     float Num4 = A[6];
     String E3 = Eq[5];
         //======================================================
@@ -262,5 +277,13 @@ float X = (Num1 / Num2);
         }
       }
     }
+=======
+    
+    if (E2.equals("+")) { X = (Num1 / Num2 + Num3); }
+    else if (E2.equals("*")) { X = (Num1 / Num2 * Num3);}
+    else if (E2.equals("-")) { X = (Num1 / Num2 - Num3);}
+    else if (E2.equals("/")) { X = (Num1 / Num2 / Num3);}
+    } 
+>>>>>>> parent of 0bff137... added support for 3 operator for division
   }
 }
