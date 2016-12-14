@@ -65,10 +65,16 @@ float X = (Num1 + Num2);
     }
   }
 } //<>//
+  if (Length < 2) {
   fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
-  delay(1000);
+  delay(1000);}
+  else {
+  fill(255,255,255);
+  textSize(35);
+  text(X, 100,200);
+  delay(1000);}
 }
 
   
@@ -121,10 +127,18 @@ float X = (Num1 - Num2);
     }
   }
 }
+
+  if (Length < 2) {
   fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
-  delay(1000);
+  delay(1000);}
+  else {
+  fill(255,255,255);
+  textSize(35);
+  text(X, 100,200);
+  delay(1000);}
+
 }
 // If opertator is -
 if (E.equals("-")){
@@ -175,14 +189,18 @@ print(X2);
       }
     }
   }
-}
-
-  
+ 
+  if (Length < 2) {
   fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
-  delay(1000);
-
+  delay(1000);}
+  else {
+  fill(255,255,255);
+  textSize(35);
+  text(X, 100,200);
+  delay(1000);}
+}
 // If opertator is /
 if (E.equals("/")){
 float X = (Num1 / Num2); 
@@ -230,10 +248,17 @@ float X = (Num1 / Num2);
       else if (E3.equals("/")) { X2 = (Num1 / Num2 / Num3 / Num4);} 
       print(X2);
       
-        fill(255,255,255);
+      
+  if (Length < 2) {
+  fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
-  delay(1000);
+  delay(1000);}
+  else {
+  fill(255,255,255);
+  textSize(35);
+  text(X, 100,200);
+  delay(1000);}
         }
       }
     }
