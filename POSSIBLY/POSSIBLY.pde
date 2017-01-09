@@ -8,14 +8,21 @@ String [] q = loadStrings("Q.txt");
 String [] Eq = (split(q[0], ' '));
 float [] A = float(split(q[0], ' '));
 int Length = Eq.length - 1;
-println(Length);
+// println(Length);
 
 String E = Eq[1];
 float Num1 = A[0];
+
+if (E.equals("Pi")){// Check for Pi
+  float X = (Num1 * 3.14159);
+  print(X);
+}
 float Num2 = A[2];
 
 float X2 = 0;
 
+
+  
 // If opertator is +
 if (E.equals("+")){
 float X = (Num1 + Num2);
@@ -72,7 +79,7 @@ float X = (Num1 + Num2);
       else if (E3.equals("*")) { X2 = (Num1 + Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 + Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 + Num2 / Num3 / Num4);} 
-      print(X2);
+     // print(X2);
     }
   }
 } //<>//
@@ -89,6 +96,7 @@ delay(1000);
   
 // If opertator is *
 if (E.equals("*")){
+  print(Length);
 float X = (Num1 - Num2); 
   if (Length > 2) { // This is if there's another operator after "-"
     float Num3 = A[4];
@@ -142,12 +150,11 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 * Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 * Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 * Num2 / Num3 / Num4);} 
-      print(X2);
+      //print(X2);
     }
   }
-  println(X);
 }
-  if (Length > 4){fill(255,255,255);
+  if (Length > 2){fill(255,255,255);
   textSize(35);
   text(X2, 100,200);
   delay(1000);
@@ -211,7 +218,7 @@ float X = (Num1 - Num2);
       else if (E3.equals("*")) { X2 = (Num1 - Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 - Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 - Num2 / Num3 / Num4);} 
-print(X2);
+//print(X2);
       }
     }
   if (Length > 4){fill(255,255,255);
@@ -230,7 +237,7 @@ print(X2);
 // If opertator is /
 if (E.equals("/")){
 float X = (Num1 / Num2); 
-print(X);
+//print(X);
   if (Length > 2) { // This is if there's another operator after "-"
     float Num3 = A[4];
     String E2 = Eq[3];
@@ -281,8 +288,10 @@ print(X);
       else if (E3.equals("*")) { X2 = (Num1 / Num2 / Num3 * Num4);}
       else if (E3.equals("-")) { X2 = (Num1 / Num2 / Num3 - Num4);}
       else if (E3.equals("/")) { X2 = (Num1 / Num2 / Num3 / Num4);} 
-      print(X2);} }
-                }
+      //print(X2);
+     }
+   }
+ }
                 
   if (Length > 2){fill(255,255,255);
   textSize(35);

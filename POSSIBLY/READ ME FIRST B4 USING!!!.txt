@@ -10,3 +10,7 @@ quotation marks you get the awnser when you run the code
 - = Subtraction
 * = Multiplication
 / = Division
+Pi = Pi (note that only pi can be in 
+equation not "3 Pi * 2" only allows "3 Pi")
+
+Also Pi's awnser will be outputted in the console.
