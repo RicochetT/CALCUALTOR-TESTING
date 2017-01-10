@@ -3,7 +3,11 @@ in "Q.txt", use spaces on
 each, uh, new number/exponent.
 Example: if you put "3 * 2 - 5" without
 quotation marks you get the awnser when you run the code.
-             
+
+Doesn't work if a negitive exponent is the first thing that 
+appears in "Q.txt" (-66 + 65), but can calculate negitive 
+awnsers (44 - 46 = -2).
+
 		<------------------->
 
 + = Addition
