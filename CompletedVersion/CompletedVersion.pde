@@ -1,8 +1,8 @@
 void setup() { //<>//
   size(500, 500); // Size of canvas
   background(100, 10, 100); // Background color as rgb values
-  
-    
+
+
 
 String [] q = loadStrings("Q.txt");
 String [] Eq = (split(q[0], ' '));
